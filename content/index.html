@@ -20,6 +20,7 @@
       padding: 2rem;
       border-radius: 12px;
       box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      text-align: center;
     }
 
     h1 {
@@ -27,65 +28,34 @@
       margin-bottom: 1rem;
     }
 
-    form {
-      display: flex;
-      flex-direction: column;
+    p {
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
 
-    label {
-      margin-top: 1rem;
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .email {
+      font-size: 1.2rem;
       font-weight: bold;
-    }
-
-    input, textarea {
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
-      margin-top: 0.25rem;
-    }
-
-    button {
       margin-top: 1.5rem;
-      padding: 0.75rem;
-      background-color: #007bff;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #0056b3;
-    }
-
-    .note {
-      margin-top: 1rem;
-      font-size: 0.9rem;
-      color: #555;
+      display: inline-block;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Thank You for Using Our Sudoku App!</h1>
-    <p>If you have any questions or need support, please use the form below. It will open your email client to send us a message.</p>
-
-    <form action="mailto:support@tedwild.dev" method="POST" enctype="text/plain">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="Name" required>
-
-      <label for="email">Email</label>
-      <input type="email" id="email" name="Email" required>
-
-      <label for="message">Message</label>
-      <textarea id="message" name="Message" rows="6" required></textarea>
-
-      <button type="submit">Send Message</button>
-    </form>
-
-    <p class="note">Or email us directly at <a href="mailto:support@tedwild.dev">support@tedwild.dev</a></p>
+    <p>We really appreciate your interest and hope you’re enjoying the game.</p>
+    <p>If you have any questions, feedback, or issues, feel free to reach out anytime.</p>
+    <p class="email"><a href="mailto:support@tedwild.dev">support@tedwild.dev</a></p>
   </div>
 </body>
 </html>
